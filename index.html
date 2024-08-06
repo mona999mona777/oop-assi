@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="loading">
+      <span class="loader"></span>
+    </div>
+    <div class="sectionOne-all-games">
+      <div class="abovee">
+        <div class="imagee">
+          <img src="images/wraper.png" alt="" />
+        </div>
+        <div class="container">
+          <nav
+            class="navbar navbar-expand-lg bg-body-tertiary my-nav p-1 mx-auto rounded-4 position-sticky top-0 z-3"
+          >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="images/logo.png"
+                  width="50"
+                  alt="the logo of navbar"
+                />
+                GAME REVIEWS</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      onclick='allcategories("MMORPG")'
+                      >MMORPG</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick='allcategories("SHOOTER")'
+                      >SHOOTER</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick='allcategories("SAILING")'
+                      >SAILING</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick='allcategories("PERMADEATH")'
+                      >PERMADEATH</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick='allcategories("SUPERHERO")'
+                      >SUPERHERO</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick='allcategories("PIXEL")'
+                      >PIXEL</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row g-4 mt-3" id="all-data"></div>
+      </div>
+    </div>
+
+    <div class="sectionTwo-details d-none">
+      <div class="container">
+        <div class="row g-4 mt-3" id="the-data"></div>
+      </div>
+    </div>
+
+    <!-- js files: jquery , bootstrap , my js -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

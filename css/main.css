@@ -1,0 +1,184 @@
+body {
+  background-color: #272b30;
+  overflow: hidden;
+}
+.loading {
+  width: 100%;
+  height: 100vh;
+  background: #272b30;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.abovee {
+  width: 100%;
+  height: 250px;
+}
+.imagee {
+  width: 100%;
+  height: 70%;
+}
+.imagee img {
+  width: 100%;
+  height: 90%;
+  transform: scaleY(1.7);
+}
+.my-nav {
+  background-color: #3a497b !important;
+  width: 90%;
+}
+.navbar-brand {
+  color: #fff !important;
+}
+.button-bgr {
+  background-color: #414549;
+}
+.change-color {
+  background-color: #4a6792;
+  border: solid #4a6792;
+  color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+.the-image img {
+  filter: grayscale(70%);
+  transition: all 1s;
+}
+.col-lg-3 {
+  transition: all 1s;
+}
+.border-style {
+  border: solid rgba(0, 0, 0, 0.1);
+  background: #272b30;
+  height: 100%;
+}
+.the-border {
+  border-top: solid rgba(0, 0, 0, 0.1) 2px;
+}
+.col-lg-3:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+.col-lg-3:hover .the-image img {
+  filter: grayscale(0);
+}
+.col-lg-3:hover .change-color {
+  background-color: blue;
+  border: solid blue;
+  transition: all 2s;
+}
+.nav-link:hover {
+  color: rgb(0, 153, 204) !important;
+  transition: all 1s;
+}
+
+/* fonts navbar */
+.nav-link.active {
+  font-family: cursive;
+  font-weight: 700;
+  color: rgb(0, 153, 204) !important;
+  font-size: 12px;
+}
+.navbar-brand {
+  font-family: cursive;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+/* fonts  allcategories()*/
+.font-h2 {
+  font-family: cursive;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.font-p {
+  font-family: cursive;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.font-span {
+  font-family: cursive;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+}
+.font-button,
+.nav-link {
+  font-family: cursive;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+
+/* fonts dataDetails() */
+.h2-font {
+  font-family: cursive;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+}
+.h3-font {
+  font-family: cursive;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+.span-font {
+  font-family: cursive;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+.p-font {
+  font-family: cursive;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.button-font {
+  font-family: cursive;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
